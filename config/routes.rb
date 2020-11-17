@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :users
-	root 'homes#index'
+	root 'devise/registrations#new'
 	resources :homes, only: [:new, :create, :edit, :update, :destroy, :index, :show]
 end

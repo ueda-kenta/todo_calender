@@ -1,0 +1,5 @@
+<h1>新規作成</h1>
+<%= form_with model: @todo, local: true do |f| %>
+<%= f.label :start_time %>
+<%= f.datetime_field :start_time %>
+<% end %>

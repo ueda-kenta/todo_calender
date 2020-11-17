@@ -1,4 +1,7 @@
 <h1>カレンダー</h1>
-<%= month_calendar do |date| %>
+<%= link_to "新規作成", new_home_path %>
+<%= month_calendar events: @todos do |date, todos| %>
   <%= date.day %>
+  <%= todos.each do |todo| %>
+  <% end %>
 <% end %>
